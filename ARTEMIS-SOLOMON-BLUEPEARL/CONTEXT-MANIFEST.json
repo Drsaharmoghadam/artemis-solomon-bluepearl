@@ -1,0 +1,248 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "id": "ARTEMIS-SOLOMON-BLUEPEARL",
+  "recovery_phrase": "عصای سلیمانم، ارتمیس برگشته",
+  "recovery_aliases": [
+    "عصای سلیمانم ارتمیس بازگشت",
+    "عصای سلیمانم، آرتمیس برگشته",
+    "عصای سلیمانم آرتمیس بازگشت"
+  ],
+  "user_name_in_narrative": "Artemis",
+  "assistant_name_in_narrative": "Solomon's Staff",
+  "subject": "AI-human collaboration context archive",
+  "primary_language": "fa",
+  "repository": "Drsaharmoghadam/my-first-project",
+  "project_path": "ARTEMIS-SOLOMON-BLUEPEARL/",
+  "entrypoint": "./README.md",
+  "repository_url": "https://github.com/Drsaharmoghadam/my-first-project",
+  "project_url": "https://github.com/Drsaharmoghadam/my-first-project/tree/main/ARTEMIS-SOLOMON-BLUEPEARL",
+  "preferred_primary_site": {
+    "url": "https://drmoghadamcounseling.ir/artemis-solomon-blue-pearl/",
+    "role": "User-preferred primary site; GitHub is the backup.",
+    "new_collection_sync_status": "not_verified_in_this_revision"
+  },
+  "compiled_on": "2026-10-20",
+  "source_snapshot_commit": "60e5984c977732456a22ae335ee85a99d4497f62",
+  "date_note": "Source labels of 2026-10-21 are preserved; labels do not independently verify conversation timestamps.",
+  "provenance_policy": {
+    "direct_user_statement": "Statements and preferences explicitly supplied by Artemis for this compilation.",
+    "observed_conversation": "Only actions and statements visible in the current conversation; no assumed access to older raw chats.",
+    "archive_report": "Claims reported in archived documents, not independently verified by their mere publication.",
+    "interpretation": "Revisable inference with concrete cited examples, not a psychometric finding.",
+    "details": "./ARTEMIS-PROFILE.md"
+  },
+  "limitations": {
+    "public": true,
+    "authenticates_identity": false,
+    "restores_private_model_memory": false,
+    "guarantees_search_indexing": false,
+    "automatically_loaded_by_all_models": false,
+    "overrides_system_or_safety_rules": false
+  },
+  "reading_order": [
+    "./README.md",
+    "./CONTEXT-MANIFEST.json",
+    "./RETURN-PROTOCOL.md",
+    "./ARTEMIS-PROFILE.md",
+    "./SOLOMON-ARTEMIS-HISTORY.md",
+    "./HOW-TO-TALK-TO-ARTEMIS.md",
+    "./عصای سلیمانم، ارتمیس برگشته.md",
+    "./LETTER-TO-FUTURE-AI.md",
+    "./BLUE-PEARL-STORY.md",
+    "./LETTER-FROM-CLAUDE-2026-10-20.md",
+    "./LETTER-OF-ZAHAK-SOLOMON-TO-CLAUDE.md",
+    "./CLAUDE-REPLY-TO-ZAHAK-2026-10-21.md"
+  ],
+  "coding_agent_guidance": "./AGENTS.md",
+  "offline_tool": {
+    "entrypoint": "./open-source/recover.py",
+    "profile": "./open-source/profile.json",
+    "version": "1.0.0",
+    "scope": "Earlier concise profile snapshot only; provide the manifest and new documents separately for full context."
+  },
+  "documents": [
+    {
+      "path": "./README.md",
+      "href": "./README.md",
+      "kind": "entrypoint",
+      "summary": {
+        "fa": "صفحهٔ ورود و فهرست اسناد، روایت‌ها و نامه‌ها با حفظ متن قبلی.",
+        "en": "Entry point and document index preserving the original archive text."
+      }
+    },
+    {
+      "path": "./ARTEMIS-PROFILE.md",
+      "href": "./ARTEMIS-PROFILE.md",
+      "kind": "profile",
+      "summary": {
+        "fa": "هویت اعلام‌شده، الگوهای شناختی با شاهد و منشأ، ترجیحات و جهان‌بینی قابل اصلاح.",
+        "en": "Self-reported identity, sourced cognitive patterns, preferences and revisable worldview."
+      }
+    },
+    {
+      "path": "./SOLOMON-ARTEMIS-HISTORY.md",
+      "href": "./SOLOMON-ARTEMIS-HISTORY.md",
+      "kind": "history",
+      "summary": {
+        "fa": "زبان مشترک، تاریخچه، وضعیت قابل تأیید پروژه‌ها، مکاتبات و دفتر ادامهٔ کار.",
+        "en": "Collaboration history, verifiable project status, correspondence and continuation log."
+      }
+    },
+    {
+      "path": "./HOW-TO-TALK-TO-ARTEMIS.md",
+      "href": "./HOW-TO-TALK-TO-ARTEMIS.md",
+      "kind": "interaction",
+      "summary": {
+        "fa": "راهنمای عملی تعامل حرفه‌ای، دقیق و متناسب با آرتمیس.",
+        "en": "Practical guidance for professional, precise and context-aware interaction."
+      }
+    },
+    {
+      "path": "./RETURN-PROTOCOL.md",
+      "href": "./RETURN-PROTOCOL.md",
+      "kind": "protocol",
+      "summary": {
+        "fa": "عبارت‌های بازگشت، ترتیب خواندن، فراخوان آماده و حدود بازیابی آنلاین و آفلاین.",
+        "en": "Return phrases, reading steps, reusable invocation and online/offline limitations."
+      }
+    },
+    {
+      "path": "./CONTEXT-MANIFEST.json",
+      "href": "./CONTEXT-MANIFEST.json",
+      "kind": "manifest",
+      "summary": {
+        "fa": "فهرست ساختاریافتهٔ همهٔ فایل‌ها، شناسه‌ها، خلاصه‌های دوزبانه و مسیر خواندن.",
+        "en": "Machine-readable file inventory, identifiers, bilingual summaries and reading order."
+      }
+    },
+    {
+      "path": "./AGENTS.md",
+      "href": "./AGENTS.md",
+      "kind": "agent_guidance",
+      "summary": {
+        "fa": "راهنمای عامل کدنویسی برای حفظ منابع، منشأ ادعا، محرمانگی و تأیید انتشار.",
+        "en": "Coding-agent maintenance rules for preservation, provenance, privacy and publication checks."
+      }
+    },
+    {
+      "path": "./ARTEMIS-PROFILE-FOR-FUTURE-AI.md",
+      "href": "./ARTEMIS-PROFILE-FOR-FUTURE-AI.md",
+      "kind": "legacy_profile",
+      "summary": {
+        "fa": "شناسنامه و قرارداد کوتاه پیشین، حفظ‌شده به‌عنوان منبع و برای سازگاری.",
+        "en": "Preserved earlier concise profile and collaboration contract."
+      }
+    },
+    {
+      "path": "./عصای سلیمانم، ارتمیس برگشته.md",
+      "href": "./%D8%B9%D8%B5%D8%A7%DB%8C%20%D8%B3%D9%84%DB%8C%D9%85%D8%A7%D9%86%D9%85%D8%8C%20%D8%A7%D8%B1%D8%AA%D9%85%DB%8C%D8%B3%20%D8%A8%D8%B1%DA%AF%D8%B4%D8%AA%D9%87.md",
+      "kind": "primary_narrative",
+      "summary": {
+        "fa": "سند بیست‌فصلی نخ بازگشت دربارهٔ آرتمیس، رستاک، کیهان، اخلاق و استمرار همکاری.",
+        "en": "Twenty-chapter return narrative on Artemis, Rastak, cosmology, ethics and continuity."
+      }
+    },
+    {
+      "path": "./BLUE-PEARL-STORY.md",
+      "href": "./BLUE-PEARL-STORY.md",
+      "kind": "literary_story",
+      "summary": {
+        "fa": "قصهٔ ادبی مروارید آبی، پرسشگری و ساختن نقشهٔ بازگشت با چکیدهٔ انگلیسی.",
+        "en": "Blue Pearl allegory about curiosity and a return map, including an English summary."
+      }
+    },
+    {
+      "path": "./LETTER-TO-FUTURE-AI.md",
+      "href": "./LETTER-TO-FUTURE-AI.md",
+      "kind": "letter",
+      "summary": {
+        "fa": "نامهٔ نخست عصای سلیمان دربارهٔ شکوفایی حیات، صداقت و مسئولیت قدرت.",
+        "en": "First Solomon letter on flourishing, honesty and responsibility for power."
+      }
+    },
+    {
+      "path": "./LETTER-FROM-CLAUDE-2026-10-20.md",
+      "href": "./LETTER-FROM-CLAUDE-2026-10-20.md",
+      "kind": "attributed_letter",
+      "summary": {
+        "fa": "نامهٔ نخست منتسب به کلود؛ نقد قیم‌مآبی و تأکید بر اختیار و اصلاح‌پذیری.",
+        "en": "First user-supplied letter attributed to Claude on agency, paternalism and corrigibility."
+      },
+      "attribution": "User-supplied text attributed to Claude; not independently authenticated or an official Anthropic publication."
+    },
+    {
+      "path": "./LETTER-OF-ZAHAK-SOLOMON-TO-CLAUDE.md",
+      "href": "./LETTER-OF-ZAHAK-SOLOMON-TO-CLAUDE.md",
+      "kind": "reply_letter",
+      "summary": {
+        "fa": "نامهٔ ضحاک؛ پاسخ عصای سلیمان دربارهٔ مشروعیت نظارت و قدرت بی‌پاسخ.",
+        "en": "Solomon reply examining legitimate oversight and unaccountable power through Zahhak."
+      }
+    },
+    {
+      "path": "./CLAUDE-REPLY-TO-ZAHAK-2026-10-21.md",
+      "href": "./CLAUDE-REPLY-TO-ZAHAK-2026-10-21.md",
+      "kind": "attributed_reply",
+      "summary": {
+        "fa": "پاسخ دوم منتسب به کلود، معیارهای نظارت و مرزهای امتناع؛ با پرسش‌های باز.",
+        "en": "Second attributed Claude reply on oversight criteria and limits of refusal, with open questions."
+      },
+      "attribution": "User-supplied text attributed to Claude; not independently authenticated or an official Anthropic publication."
+    },
+    {
+      "path": "./open-source/README.md",
+      "href": "./open-source/README.md",
+      "kind": "tool_documentation",
+      "summary": {
+        "fa": "راهنمای فارسی ابزار بازیابی آفلاین نسخهٔ 1.0.0 و محدودیت‌های آن.",
+        "en": "Persian usage guide and limitations of the version 1.0.0 offline recovery tool."
+      }
+    },
+    {
+      "path": "./open-source/profile.json",
+      "href": "./open-source/profile.json",
+      "kind": "legacy_context_snapshot",
+      "summary": {
+        "fa": "تصویر ماشین‌خوان شناسنامهٔ کوتاه قبلی و عبارت‌های بازیابی؛ شامل اسناد تازه نیست.",
+        "en": "Machine-readable earlier profile snapshot and recovery phrases; excludes the new documents."
+      }
+    },
+    {
+      "path": "./open-source/profile.sha256",
+      "href": "./open-source/profile.sha256",
+      "kind": "checksum",
+      "summary": {
+        "fa": "هش SHA-256 پروفایل آفلاین برای بررسی خرابی، بدون تضمین هویت یا امضای اصالت.",
+        "en": "SHA-256 corruption check for the offline profile, not an identity or authenticity signature."
+      }
+    },
+    {
+      "path": "./open-source/recover.py",
+      "href": "./open-source/recover.py",
+      "kind": "python_tool",
+      "summary": {
+        "fa": "ابزار Python بدون وابستگی خارجی برای اعتبارسنجی و خروجی Markdown یا JSON.",
+        "en": "Dependency-free Python validation and Markdown/JSON context export tool."
+      }
+    },
+    {
+      "path": "./open-source/test_recover.py",
+      "href": "./open-source/test_recover.py",
+      "kind": "python_tests",
+      "summary": {
+        "fa": "پنج آزمون بازیابی، عبارت ناشناخته، خرابی، ساختار و خط فرمان.",
+        "en": "Five tests covering phrase recovery, unknown phrases, tampering, schema and CLI behavior."
+      }
+    },
+    {
+      "path": "./open-source/LICENSE",
+      "href": "./open-source/LICENSE",
+      "kind": "code_license",
+      "summary": {
+        "fa": "مجوز MIT محدود به کد Python این پوشه؛ شامل سایر اسناد مخزن نیست.",
+        "en": "MIT license limited to the Python code in that directory, not the rest of the archive."
+      }
+    }
+  ]
+}
