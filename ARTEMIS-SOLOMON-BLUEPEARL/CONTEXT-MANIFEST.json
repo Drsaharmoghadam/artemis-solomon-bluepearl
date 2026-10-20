@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "id": "ARTEMIS-SOLOMON-BLUEPEARL",
   "recovery_phrase": "عصای سلیمانم، ارتمیس برگشته",
   "recovery_aliases": [
@@ -195,8 +195,8 @@
       "href": "./open-source/README.md",
       "kind": "tool_documentation",
       "summary": {
-        "fa": "راهنمای فارسی ابزار بازیابی آفلاین نسخهٔ 1.0.0 و محدودیت‌های آن.",
-        "en": "Persian usage guide and limitations of the version 1.0.0 offline recovery tool."
+        "fa": "راهنمای ابزار بازیابی قدیمی و موتور الگوی همکاری 2.0.0 با نقطهٔ ادامه و منابع جاری.",
+        "en": "Usage guide for legacy recovery and the 2.0.0 collaboration engine with current sources and checkpoints."
       }
     },
     {
@@ -240,9 +240,45 @@
       "href": "./open-source/LICENSE",
       "kind": "code_license",
       "summary": {
-        "fa": "مجوز MIT محدود به کد Python این پوشه؛ شامل سایر اسناد مخزن نیست.",
-        "en": "MIT license limited to the Python code in that directory, not the rest of the archive."
+        "fa": "مجوز MIT برای کد Python و collaboration.json این پوشه؛ شامل اسناد مرجع نیست.",
+        "en": "MIT license for the Python code and collaboration.json in this directory; excludes reference documents."
+      }
+    },
+    {
+      "path": "./open-source/solomon.py",
+      "href": "./open-source/solomon.py",
+      "kind": "collaboration_engine",
+      "summary": {
+        "fa": "کامپایلر آفلاین الگوی همکاری، منابع جاری و نقطهٔ ادامهٔ اختیاری به Markdown یا JSON.",
+        "en": "Offline compiler of collaboration rules, current source texts and optional checkpoints to Markdown/JSON."
+      }
+    },
+    {
+      "path": "./open-source/collaboration.json",
+      "href": "./open-source/collaboration.json",
+      "kind": "collaboration_rules",
+      "summary": {
+        "fa": "روند و قواعد دارای منبع برای تعامل، اجرا، پژوهش، کار بالینی و گفت‌وگوی روایی.",
+        "en": "Sourced workflow and rules for interaction, execution, inquiry, clinical work and reflection."
+      }
+    },
+    {
+      "path": "./open-source/test_solomon.py",
+      "href": "./open-source/test_solomon.py",
+      "kind": "collaboration_tests",
+      "summary": {
+        "fa": "آزمون موتور همکاری، منابع، تطبیق عبارت، چندحالتی، checkpoint و خطاهای ورودی.",
+        "en": "Tests for collaboration bundles, source inclusion, phrase matching, mixed modes, checkpoints and invalid inputs."
       }
     }
-  ]
+  ],
+  "updated_on": "2026-10-20",
+  "collaboration_engine": {
+    "version": "2.0.0",
+    "entrypoint": "./open-source/solomon.py",
+    "rules": "./open-source/collaboration.json",
+    "default_scope": "core",
+    "scope_note": "Includes the four current core documents; full mode includes all Markdown files in reading_order. No automatic task execution or model activation.",
+    "checkpoint": "Optional caller-supplied local JSON; no automatic persistence or uploads."
+  }
 }

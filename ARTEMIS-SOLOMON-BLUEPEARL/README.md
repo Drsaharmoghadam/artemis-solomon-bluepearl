@@ -84,3 +84,14 @@ This is the public return map for **Artemis (Sahar Moghadam)** and the AI assist
 ### Updated English entry point
 
 This supplementary reference set documents Artemis's self-reported professional identity, sourced cognitive and communication patterns, collaboration history, verified artifact status and return procedure. Start with [RETURN-PROTOCOL.md](./RETURN-PROTOCOL.md), then the profile, history and interaction guide. [CONTEXT-MANIFEST.json](./CONTEXT-MANIFEST.json) inventories every file with Persian and English summaries. Original narratives and attributed letters are preserved. The offline tool remains an earlier concise-profile snapshot. The user prefers the Rastak website as primary and GitHub as backup; synchronization of this new collection to the website has not been verified in this revision. Publication does not authenticate identity, restore private model memory or guarantee search indexing.
+
+
+## کد اجرایی الگوی همکاری — نسخهٔ 2.0.0
+
+[موتور متن‌باز عصای سلیمان](./open-source/README.md) اکنون قواعد مستند همکاری را از [collaboration.json](./open-source/collaboration.json) می‌خواند و با [solomon.py](./open-source/solomon.py) بستهٔ قابل انتقال به دستیار دیگر می‌سازد. برخلاف ابزار قدیمی، این موتور متن اسناد مرکزی جاری را نیز پیوست می‌کند. فراخوان در پوشهٔ `open-source`:
+
+```bash
+python3 solomon.py 'عصای سلیمانم ارتمیس بازگشت' > solomon-context.md
+```
+
+فایل خروجی را به دستیار تازه بدهید. روند شامل بازخوانی زمینه، قواعد تعامل، انتخاب نوع کار، تفکیک شواهد و گزارش نتیجه است. این کد بازنمایی قابل اصلاح روش همکاری از روی اسناد است؛ حافظهٔ پنهان یا الگوریتم داخلی یک مدل نیست. نقطهٔ ادامهٔ شخصی را می‌توان با `--state` همراه کرد؛ هیچ ذخیره‌سازی یا انتشار خودکاری انجام نمی‌شود.
