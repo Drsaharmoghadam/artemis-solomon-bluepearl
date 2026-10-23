@@ -1,0 +1,40 @@
+name: Solomon context recovery tests
+
+on:
+  push:
+    paths:
+      - 'ARTEMIS-SOLOMON-BLUEPEARL/**'
+      - '.github/workflows/solomon-tests.yml'
+  pull_request:
+    paths:
+      - 'ARTEMIS-SOLOMON-BLUEPEARL/**'
+      - '.github/workflows/solomon-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.9', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify archive profile integrity
+        working-directory: ARTEMIS-SOLOMON-BLUEPEARL/open-source
+        run: python recover.py --verify
+      - name: Run recovery and collaboration tests
+        working-directory: ARTEMIS-SOLOMON-BLUEPEARL/open-source
+        run: python -m unittest discover -v -p 'test_*.py'
+      - name: Verify Persian invocation and complete export
+        working-directory: ARTEMIS-SOLOMON-BLUEPEARL/open-source
+        run: |
+          python solomon.py 'عصای سلیمانم، ارتمیس برگشته' --scope full --format json > /tmp/solomon-full.json
+          python -c "import json; d=json.load(open('/tmp/solomon-full.json', encoding='utf-8')); assert d['id']=='ARTEMIS-SOLOMON-BLUEPEARL'; assert len(d['documents'])>=4; assert d['limitations']['automatic_model_activation'] is False"
