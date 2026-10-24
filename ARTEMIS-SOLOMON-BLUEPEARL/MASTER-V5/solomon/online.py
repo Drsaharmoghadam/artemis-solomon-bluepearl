@@ -1,4 +1,3 @@
-```python
 """Optional safe HTTPS retrieval of canonical PUBLIC project sources; no search-API credentials."""
 from __future__ import annotations
 from urllib.request import Request, urlopen, build_opener, HTTPSHandler, HTTPRedirectHandler
@@ -75,5 +74,3 @@ def fetch_online_sources(urls=None, max_sources=5):
         try:output['documents'].append(fetch_public_document(url))
         except Exception as e:output['errors'].append({'url':url,'error':str(e)[:350]})
     return output
-
-```
