@@ -1,4 +1,3 @@
-```python
 """Source-grounded collaboration context compiler for opt-in hosts."""
 from __future__ import annotations
 import datetime
@@ -43,5 +42,3 @@ def build_context(scope='core', max_chars=75000, verify=True):
     return {'context':result,'scope':scope,'included_sources':included,
             'omitted_sources':omitted,'chars':len(result),'manifest_version':manifest['version'],
             'provenance':'bundled public material; does not grant access to private chats'}
-
-```
