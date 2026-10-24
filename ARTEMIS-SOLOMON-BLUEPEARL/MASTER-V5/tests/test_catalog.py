@@ -1,4 +1,3 @@
-```python
 import unittest,hashlib
 from pathlib import Path
 from solomon.catalog import safe_path,load_manifest,verify_sources,selected_sources
@@ -17,5 +16,3 @@ class CatalogTests(unittest.TestCase):
         m=load_manifest();a=selected_sources(m,'core');b=selected_sources(m,'full');self.assertLessEqual(len(a),len(b))
     def test_small_budget_is_honest(self):
         r=build_context('core',1200);self.assertTrue(r['omitted_sources'])
-
-```
