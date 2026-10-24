@@ -1,4 +1,3 @@
-```python
 import unittest
 from solomon.contract import is_invocation,return_reply,ACK,normalize,public_contract
 class ContractTests(unittest.TestCase):
@@ -15,5 +14,3 @@ class ContractTests(unittest.TestCase):
         with self.assertRaises(TypeError):normalize(123)
     def test_boundaries(self):
         d=public_contract();self.assertFalse(d['authenticates_user']);self.assertFalse(d['automatically_activates_any_ai']);self.assertFalse(d['recovers_hidden_memory'])
-
-```
