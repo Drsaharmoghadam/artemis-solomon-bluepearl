@@ -1,4 +1,3 @@
-```python
 """Public read-only adapter; caller must configure TLS/rate limiting at hosting edge."""
 from __future__ import annotations
 import json
@@ -82,5 +81,3 @@ def serve(host='127.0.0.1',port=8787):
     try:httpd.serve_forever()
     except KeyboardInterrupt:pass
     finally:httpd.server_close()
-
-```
