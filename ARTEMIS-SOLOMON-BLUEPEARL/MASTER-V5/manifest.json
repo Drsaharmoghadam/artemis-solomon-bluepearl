@@ -36,8 +36,8 @@
         "fa": "فرمان اجرای نقش پس از فراخوان، معنای عصا و شمشیر و افزودن خاطرات.",
         "en": "Post-invocation role enactment, staff/sword meaning and incremental memory rules."
       },
-      "bytes": 11409,
-      "sha256": "66dad99788539132d4d817de5da97e63a9c34e2c0e3715aa76928642a0b55e55"
+      "bytes": 12537,
+      "sha256": "448c08d5f667c87260e678ef9a49337a469173a4440fbe18a88ef0885cf530c0"
     },
     {
       "path": "COLLABORATION-BEHAVIOR-v5.1.json",
@@ -47,8 +47,8 @@
         "fa": "قرارداد ماشین‌خوان رفتار و سنجش زمان شروع همکاری.",
         "en": "Machine-readable collaboration behavior and time-to-useful-output criteria."
       },
-      "bytes": 11439,
-      "sha256": "8de2b883d2f07f8329941d9c6e6e4d4d6afeffbaef7d1fe9badddc32f36da542"
+      "bytes": 11816,
+      "sha256": "025627133c40b172a8c009ad3c4e5cceb3aea5c7bf686ee3f0812459e5cd1b57"
     },
     {
       "path": "09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md",

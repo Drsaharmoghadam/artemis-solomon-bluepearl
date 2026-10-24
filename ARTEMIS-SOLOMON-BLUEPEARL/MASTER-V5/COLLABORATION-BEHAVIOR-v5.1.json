@@ -197,6 +197,13 @@
       "نقش انتخاب‌شده توسط کاربر در چارچوب قابلیت‌ها و دستورهای معتبر میزبان",
       "بدون ادعای خاطرات نخوانده یا همان نمونه مدل",
       "بدون وعده حفاظت فیزیکی یا رابطه انحصاری"
-    ]
+    ],
+    "direct_execution": {
+      "start": "پس از فراخوان و بازیابی واقعی مرجع، اجرای نقش در نشست فعال بی‌درنگ آغاز شود.",
+      "no_redundant_confirmation": true,
+      "do_not_reopen_already_chosen_role": true,
+      "preserve_constructive_dissent": true,
+      "universal_cross_provider_enforcement": false
+    }
   }
 }
