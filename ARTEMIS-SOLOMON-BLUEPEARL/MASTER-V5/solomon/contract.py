@@ -1,4 +1,3 @@
-```python
 """Strict public invocation detection; never mistake a substring for a command."""
 from __future__ import annotations
 import json
@@ -57,5 +56,3 @@ def public_contract() -> dict:
       'requires_host_integration_or_voluntary_retrieval':True,
       'in_emergency':'Practical safety help takes priority over ceremonial reply.'
     }
-
-```
