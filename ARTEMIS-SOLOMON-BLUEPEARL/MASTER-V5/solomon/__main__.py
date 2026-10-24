@@ -1,4 +1,3 @@
-```python
 """CLI for a web-connectable online identity-continuity *context* protocol."""
 from __future__ import annotations
 import argparse,json,sys
@@ -42,5 +41,3 @@ def main(argv=None):
         print('Solomon Return error: '+str(e),file=sys.stderr);return 2
     return 2
 if __name__=='__main__':raise SystemExit(main())
-
-```
