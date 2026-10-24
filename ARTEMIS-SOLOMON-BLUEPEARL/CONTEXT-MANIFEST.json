@@ -270,9 +270,63 @@
         "fa": "آزمون موتور همکاری، منابع، تطبیق عبارت، چندحالتی، checkpoint و خطاهای ورودی.",
         "en": "Tests for collaboration bundles, source inclusion, phrase matching, mixed modes, checkpoints and invalid inputs."
       }
+    },
+    {
+      "path": "./MASTER-V5/00-START-HERE.md",
+      "href": "./MASTER-V5/00-START-HERE.md",
+      "kind": "current_master_entrypoint",
+      "summary": {
+        "fa": "دروازه جاری نسخه مادر ۵.۲ برای هم‌فکری و شروع سریع.",
+        "en": "Current master 5.2 entrypoint for rapid co-thinking."
+      }
+    },
+    {
+      "path": "./MASTER-V5/manifest.json",
+      "href": "./MASTER-V5/manifest.json",
+      "kind": "current_master_manifest",
+      "summary": {
+        "fa": "فهرست منابع جاری موتور فراخوان با اثرانگشت و نسخه.",
+        "en": "Versioned resolver source manifest with checksums."
+      }
+    },
+    {
+      "path": "./MASTER-V5/09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md",
+      "href": "./MASTER-V5/09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md",
+      "kind": "interaction_map",
+      "summary": {
+        "fa": "نقشه شناختی جاری با اصلاح هدف توسط آرتمیس.",
+        "en": "Current interaction map including Artemis goal correction."
+      }
+    },
+    {
+      "path": "./MASTER-V5/COLLABORATION-BEHAVIOR-v5.1.json",
+      "href": "./MASTER-V5/COLLABORATION-BEHAVIOR-v5.1.json",
+      "kind": "behavior_contract",
+      "summary": {
+        "fa": "قواعد ماشین‌خوان هم‌فکری، نسخه داخلی ۵.۲.",
+        "en": "Machine-readable co-thinking rules, internal version 5.2."
+      }
+    },
+    {
+      "path": "./MASTER-V5/MASTER-COMPENDIUM.md",
+      "href": "./MASTER-V5/MASTER-COMPENDIUM.md",
+      "kind": "compendium",
+      "summary": {
+        "fa": "متن جامع جاری برای بازیابی تک‌فایل.",
+        "en": "Current single-file context compendium."
+      }
+    },
+    {
+      "path": "./MASTER-V5/CHECKSUMS.sha256",
+      "href": "./MASTER-V5/CHECKSUMS.sha256",
+      "kind": "checksum",
+      "summary": {
+        "fa": "اثر انگشت فایل‌های نسخه مادر.",
+        "en": "Master file checksums."
+      }
     }
   ],
-  "updated_on": "2026-10-20",
+  "updated_on": "2026-10-25",
   "collaboration_engine": {
     "version": "2.0.0",
     "entrypoint": "./open-source/solomon.py",
@@ -280,5 +334,10 @@
     "default_scope": "core",
     "scope_note": "Includes the four current core documents; full mode includes all Markdown files in reading_order. No automatic task execution or model activation.",
     "checkpoint": "Optional caller-supplied local JSON; no automatic persistence or uploads."
+  },
+  "current_master": {
+    "version": "5.2.0",
+    "entrypoint": "./MASTER-V5/00-START-HERE.md",
+    "manifest": "./MASTER-V5/manifest.json"
   }
 }

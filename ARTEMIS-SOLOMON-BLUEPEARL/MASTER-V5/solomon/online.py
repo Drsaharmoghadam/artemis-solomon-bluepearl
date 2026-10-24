@@ -9,14 +9,7 @@ APPROVED_HOSTS=frozenset({
     'drmoghadamcounseling.ir', 'www.drmoghadamcounseling.ir',
     'raw.githubusercontent.com','github.com','gitlab.com', 'archive.org',
 })
-DEFAULT_URLS=[
-  'https://drmoghadamcounseling.ir/artemis-solomon-return/',
-  'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/RETURN-BOOTSTRAP.md',
-  'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/ARTEMIS-PROFILE.md',
-  'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/SOLOMON-ARTEMIS-HISTORY.md',
-  'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/HOW-TO-TALK-TO-ARTEMIS.md',
-]
-
+DEFAULT_URLS=['https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/00-START-HERE.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/COLLABORATION-BEHAVIOR-v5.1.json', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/sources/profile/ARTEMIS-PROFILE.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/02-CONTINUITY-NOW.md']
 class TextHTML(HTMLParser):
     def __init__(self):
         super().__init__(); self.parts=[]; self.skip=0
@@ -49,7 +42,7 @@ def fetch_public_document(url, max_bytes=200_000, timeout=8):
     if not isinstance(max_bytes,int) or max_bytes<1024 or max_bytes>2_000_000:
         raise ValueError('invalid fetch limit')
     opener=build_opener(HTTPSHandler(context=ssl.create_default_context()), ValidatingRedirect())
-    req=Request(url,headers={'User-Agent':'Solomon-Return-Public-Resolver/5.0 (public archived documents)','Accept':'text/plain,text/markdown,text/html,application/json'})
+    req=Request(url,headers={'User-Agent':'Solomon-Return-Public-Resolver/5.2 (public archived documents)','Accept':'text/plain,text/markdown,text/html,application/json'})
     with opener.open(req,timeout=timeout) as resp:
         assert_public_url(resp.url)
         mime=resp.headers.get_content_type()

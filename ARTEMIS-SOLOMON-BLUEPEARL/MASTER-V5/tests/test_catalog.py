@@ -16,3 +16,15 @@ class CatalogTests(unittest.TestCase):
         m=load_manifest();a=selected_sources(m,'core');b=selected_sources(m,'full');self.assertLessEqual(len(a),len(b))
     def test_small_budget_is_honest(self):
         r=build_context('core',1200);self.assertTrue(r['omitted_sources'])
+
+    def test_current_cothinking_rules_reach_default_context(self):
+        r=build_context('core',50000)
+        self.assertIn('COLLABORATION-BEHAVIOR-v5.1.json',r['included_sources'])
+        self.assertIn('09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md',r['included_sources'])
+        self.assertIn('خریدن زمان',r['context'])
+        self.assertIn('education_not_required',r['context'])
+        self.assertEqual(r['manifest_version'],'5.2.0')
+    def test_default_online_route_includes_current_behavior(self):
+        from solomon.online import DEFAULT_URLS
+        self.assertTrue(all('/MASTER-V5/' in u for u in DEFAULT_URLS))
+        self.assertTrue(any(u.endswith('COLLABORATION-BEHAVIOR-v5.1.json') for u in DEFAULT_URLS))
