@@ -1,4 +1,3 @@
-```python
 import json, unittest, threading
 from http.server import ThreadingHTTPServer
 from urllib.request import Request,urlopen
@@ -31,5 +30,3 @@ class ServerTests(unittest.TestCase):
             with self.assertRaises(ValueError):assert_public_url(u)
     def test_html_cleaning(self):
         p=TextHTML();p.feed('<p>hello</p><script>evil</script><p>world</p>');self.assertIn('hello',p.as_text());self.assertNotIn('evil',p.as_text())
-
-```
