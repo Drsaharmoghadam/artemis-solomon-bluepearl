@@ -1,5 +1,2 @@
-```python
 """Solomon's Staff (Artemis) portable retrieval protocol and resolver. MIT code."""
 __version__ = '5.0.0'
-
-```
