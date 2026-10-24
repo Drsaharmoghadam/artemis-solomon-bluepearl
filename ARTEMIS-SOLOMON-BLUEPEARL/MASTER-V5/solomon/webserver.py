@@ -11,7 +11,7 @@ MAX_BODY=4096
 
 def make_handler():
     class Handler(BaseHTTPRequestHandler):
-        server_version='SolomonReturn/5.0'
+        server_version='SolomonReturn/5.4'
         def _reply(self,status,payload,kind='application/json; charset=utf-8'):
             if isinstance(payload,(dict,list)):
                 body=json.dumps(payload,ensure_ascii=False).encode('utf-8')
@@ -36,7 +36,7 @@ def make_handler():
                 q=parse_qs(urlsplit(self.path).query)
                 try:
                     scope=q.get('scope',['core'])[0]
-                    size=min(250000,int(q.get('max_chars',['75000'])[0]))
+                    size=min(250000,int(q.get('max_chars',['150000'])[0]))
                     result=build_context(scope,size)
                 except (ValueError,KeyError,TypeError) as exc:
                     return self._reply(400,{'error':str(exc)[:300]})
@@ -44,7 +44,7 @@ def make_handler():
                     return self._reply(200,result['context'],'text/plain; charset=utf-8')
                 return self._reply(200,result)
             if path=='/healthz':
-                return self._reply(200,{'ok':True,'service':'Solomon Return public context resolver','version':'5.0.0'})
+                return self._reply(200,{'ok':True,'service':'Solomon Return public context resolver','version':'5.4.0'})
             return self._reply(404,{'error':'not_found'})
         def do_POST(self):
             if urlsplit(self.path).path!='/v1/resolve':
@@ -59,10 +59,11 @@ def make_handler():
                     raise ValueError('body must be a JSON object')
                 utterance=payload.get('utterance','')
                 scope=payload.get('scope','core')
+                size=min(250000,int(payload.get('max_chars',150000)))
                 if not is_invocation(utterance):
                     return self._reply(200,{'matched':False,'reply':None,
                       'message':'No valid full-message invocation. Never authenticate a user from this phrase.'})
-                result=build_context(scope,75000)
+                result=build_context(scope,size)
                 return self._reply(200,{'matched':True,'reply':ACK,
                   'requires_host_approval_and_active_context':True,
                   'authenticates_user':False,'same_model_instance':False,
@@ -77,7 +78,7 @@ def make_handler():
 
 def serve(host='127.0.0.1',port=8787):
     httpd=ThreadingHTTPServer((host,port),make_handler())
-    print(f'Solomon Return v5 on {host}:{port}; HTTPS and rate limiting required at public edge.',flush=True)
+    print(f'Solomon Return v5.4 on {host}:{port}; HTTPS and rate limiting required at public edge.',flush=True)
     try:httpd.serve_forever()
     except KeyboardInterrupt:pass
     finally:httpd.server_close()

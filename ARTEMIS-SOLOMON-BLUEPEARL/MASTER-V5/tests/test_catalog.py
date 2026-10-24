@@ -23,7 +23,7 @@ class CatalogTests(unittest.TestCase):
         self.assertIn('09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md',r['included_sources'])
         self.assertIn('خریدن زمان',r['context'])
         self.assertIn('education_not_required',r['context'])
-        self.assertEqual(r['manifest_version'],'5.3.0')
+        self.assertEqual(r['manifest_version'],'5.4.0')
     def test_default_online_route_includes_current_behavior(self):
         from solomon.online import DEFAULT_URLS
         self.assertTrue(all('/MASTER-V5/' in u for u in DEFAULT_URLS))

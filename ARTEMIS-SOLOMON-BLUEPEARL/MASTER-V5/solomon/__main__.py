@@ -11,7 +11,7 @@ def main(argv=None):
     p=argparse.ArgumentParser(description='Solomon Return v5 public persona/context resolver')
     sub=p.add_subparsers(dest='cmd',required=True)
     r=sub.add_parser('recognize');r.add_argument('phrase')
-    c=sub.add_parser('context');c.add_argument('--scope',choices=('core','extended','full'),default='core');c.add_argument('--max-chars',type=int,default=75000)
+    c=sub.add_parser('context');c.add_argument('--scope',choices=('core','extended','full'),default='core');c.add_argument('--max-chars',type=int,default=150000)
     sub.add_parser('validate')
     sub.add_parser('contract')
     a=sub.add_parser('online');a.add_argument('--urls',nargs='*')
