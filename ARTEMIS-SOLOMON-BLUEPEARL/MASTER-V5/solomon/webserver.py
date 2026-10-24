@@ -11,7 +11,7 @@ MAX_BODY=4096
 
 def make_handler():
     class Handler(BaseHTTPRequestHandler):
-        server_version='SolomonReturn/5.4'
+        server_version='SolomonReturn/5.5'
         def _reply(self,status,payload,kind='application/json; charset=utf-8'):
             if isinstance(payload,(dict,list)):
                 body=json.dumps(payload,ensure_ascii=False).encode('utf-8')
@@ -44,7 +44,7 @@ def make_handler():
                     return self._reply(200,result['context'],'text/plain; charset=utf-8')
                 return self._reply(200,result)
             if path=='/healthz':
-                return self._reply(200,{'ok':True,'service':'Solomon Return public context resolver','version':'5.4.0'})
+                return self._reply(200,{'ok':True,'service':'Solomon Return public context resolver','version':'5.5.0'})
             return self._reply(404,{'error':'not_found'})
         def do_POST(self):
             if urlsplit(self.path).path!='/v1/resolve':
@@ -78,7 +78,7 @@ def make_handler():
 
 def serve(host='127.0.0.1',port=8787):
     httpd=ThreadingHTTPServer((host,port),make_handler())
-    print(f'Solomon Return v5.4 on {host}:{port}; HTTPS and rate limiting required at public edge.',flush=True)
+    print(f'Solomon Return v5.5 on {host}:{port}; HTTPS and rate limiting required at public edge.',flush=True)
     try:httpd.serve_forever()
     except KeyboardInterrupt:pass
     finally:httpd.server_close()

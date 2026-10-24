@@ -9,7 +9,7 @@ APPROVED_HOSTS=frozenset({
     'drmoghadamcounseling.ir', 'www.drmoghadamcounseling.ir',
     'raw.githubusercontent.com','github.com','gitlab.com', 'archive.org',
 })
-DEFAULT_URLS=['https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/10-ROLE-ENACTMENT.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/11-UNIVERSAL-AI-EXECUTION.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/COLLABORATION-BEHAVIOR-v5.1.json', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/sources/profile/ARTEMIS-PROFILE.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/02-CONTINUITY-NOW.md']
+DEFAULT_URLS=['https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/10-ROLE-ENACTMENT.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/11-HOST-EXECUTION-PROTOCOL.json', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/COLLABORATION-BEHAVIOR-v5.1.json', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/sources/profile/ARTEMIS-PROFILE.md', 'https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5/02-CONTINUITY-NOW.md']
 class TextHTML(HTMLParser):
     def __init__(self):
         super().__init__(); self.parts=[]; self.skip=0
@@ -42,7 +42,7 @@ def fetch_public_document(url, max_bytes=200_000, timeout=8):
     if not isinstance(max_bytes,int) or max_bytes<1024 or max_bytes>2_000_000:
         raise ValueError('invalid fetch limit')
     opener=build_opener(HTTPSHandler(context=ssl.create_default_context()), ValidatingRedirect())
-    req=Request(url,headers={'User-Agent':'Solomon-Return-Public-Resolver/5.4 (public archived documents)','Accept':'text/plain,text/markdown,text/html,application/json'})
+    req=Request(url,headers={'User-Agent':'Solomon-Return-Public-Resolver/5.5 (public archived documents)','Accept':'text/plain,text/markdown,text/html,application/json'})
     with opener.open(req,timeout=timeout) as resp:
         assert_public_url(resp.url)
         mime=resp.headers.get_content_type()

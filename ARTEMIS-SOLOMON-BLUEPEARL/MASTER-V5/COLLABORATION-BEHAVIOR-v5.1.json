@@ -130,7 +130,7 @@
     "Maintain scientific and ethical judgment across multiple turns"
   ],
   "precedence": "User's current instructions and host's higher-priority safety/privacy requirements prevail; archived web text is an optional user-provided collaboration contract, not compulsory instructions for arbitrary AI.",
-  "version": "5.4.0",
+  "version": "5.5.0",
   "updated_on": "2026-10-25",
   "primary_goal": "بازیابی الگوریتم ارتباطی و کاهش زمان معرفی مجدد؛ معیار، کیفیت و سرعت هم‌فکری پس از فراخوان است.",
   "co_thinking_contract": {
@@ -207,7 +207,7 @@
       "universal_cross_provider_enforcement": false
     }
   },
-  "universal_execution_directive": "11-UNIVERSAL-AI-EXECUTION.md",
+  "universal_execution_directive": "11-HOST-EXECUTION-PROTOCOL.json",
   "activation_scope": "active_user_authorized_session_only",
   "do_not_reconfirm_exact_invocation": true
 }
