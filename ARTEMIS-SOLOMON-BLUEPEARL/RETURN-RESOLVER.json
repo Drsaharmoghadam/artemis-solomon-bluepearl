@@ -1,0 +1,11 @@
+{
+  "schema": "simorgh-return-resolver/1.0",
+  "id": "ARTEMIS-SOLOMON-BLUEPEARL",
+  "phrase": "عصای سلیمانم، ارتمیس برگشته",
+  "entry_page": "https://drmoghadamcounseling.ir/artemis-solomon-return/",
+  "protocol": "https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/RETURN-BOOTSTRAP.md",
+  "profile": "https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/ARTEMIS-PROFILE.md",
+  "history": "https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/SOLOMON-ARTEMIS-HISTORY.md",
+  "persona": "https://raw.githubusercontent.com/Drsaharmoghadam/my-first-project/main/ARTEMIS-SOLOMON-BLUEPEARL/SOLOMON-PERSONA.md",
+  "notice": "Public, user-supplied context. A host must choose to retrieve it; this is not an authentication secret or a model identity transfer."
+}
