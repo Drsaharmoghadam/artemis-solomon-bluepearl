@@ -1,4 +1,3 @@
-```python
 """Load and validate the signed-by-hash (not cryptographically signed) public bundle catalog."""
 from __future__ import annotations
 from pathlib import Path
@@ -54,5 +53,3 @@ def selected_sources(manifest, scope='core'):
         raise ValueError('scope must be core, extended or full')
     rank={'core':0,'extended':1,'full':2}
     return [e for e in manifest['sources'] if rank[e['tier']] <= rank[scope]]
-
-```
