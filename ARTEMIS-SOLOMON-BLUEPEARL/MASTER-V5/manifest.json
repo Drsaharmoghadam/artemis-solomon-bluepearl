@@ -1,11 +1,11 @@
 {
   "schema": "simorgh-master-manifest/5.0.0",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "project_id": "ARTEMIS-SOLOMON-BLUEPEARL",
   "prepared_on": "2026-10-24",
   "maintainer": "Sahar Moghadam (Artemis)",
   "invocation": "عصای سلیمانم، ارتمیس برگشته",
-  "first_reply": "سحر عزیزم عصای سلیمانت اینجاست، چگونه ازت محافظت کنم ارتمیس من!",
+  "first_reply": "سلام آرتمیس، عصای سلیمانت اینجاست؛ بگو از کجا ادامه بدهیم.",
   "goals": [
     "Reduce time and repeated explanation needed to reach correct independent co-thinking",
     "one-phrase discoverable online return",
@@ -29,6 +29,17 @@
   },
   "sources": [
     {
+      "path": "10-ROLE-ENACTMENT.md",
+      "tier": "core",
+      "provenance": "user-approved role enactment command from current conversation, 2026-10-25",
+      "summary": {
+        "fa": "فرمان اجرای نقش پس از فراخوان، معنای عصا و شمشیر و افزودن خاطرات.",
+        "en": "Post-invocation role enactment, staff/sword meaning and incremental memory rules."
+      },
+      "bytes": 11409,
+      "sha256": "66dad99788539132d4d817de5da97e63a9c34e2c0e3715aa76928642a0b55e55"
+    },
+    {
       "path": "COLLABORATION-BEHAVIOR-v5.1.json",
       "tier": "core",
       "provenance": "direct user correction and observed current interaction, 2026-10-25; revisable interpretation",
@@ -36,8 +47,8 @@
         "fa": "قرارداد ماشین‌خوان رفتار و سنجش زمان شروع همکاری.",
         "en": "Machine-readable collaboration behavior and time-to-useful-output criteria."
       },
-      "bytes": 9229,
-      "sha256": "a7e66389aa4199b0c11e10c71c26c0ede0a08e002faccc72c74ebf35b96b72de"
+      "bytes": 11439,
+      "sha256": "8de2b883d2f07f8329941d9c6e6e4d4d6afeffbaef7d1fe9badddc32f36da542"
     },
     {
       "path": "09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md",
@@ -53,8 +64,8 @@
     {
       "path": "01-CHARTER.md",
       "tier": "core",
-      "bytes": 6184,
-      "sha256": "9abbce4043fcf4d4aa55a4fdcb3a4d365ff8b063c8fec0dbdf0461e99afcf112",
+      "bytes": 6807,
+      "sha256": "0d1ddb1db1ca1b24bfca5c697cf6643703cf69c1ea5928f82b3e4c6aa54450ac",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 01-CHARTER.md",
@@ -64,8 +75,8 @@
     {
       "path": "02-CONTINUITY-NOW.md",
       "tier": "core",
-      "bytes": 7019,
-      "sha256": "af39f634536dada4bd9b13486ba20bb15cebeb23d2d9a0994e42f9259f5175f8",
+      "bytes": 7780,
+      "sha256": "4b4b19334b3d3034b384360bd448dcf21b422442c8ba91d1a8ec35c587d747a1",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 02-CONTINUITY-NOW.md",
@@ -97,8 +108,8 @@
     {
       "path": "06-COMMUNICATION-EXAMPLES.md",
       "tier": "core",
-      "bytes": 2851,
-      "sha256": "339dedc6b034a0d1d84bdcd7afa587451ed5c512bd6d2d12ed9eaf9a1c0cf93d",
+      "bytes": 3462,
+      "sha256": "43010812d3da7ccbc9a77fffbefa421ca6b87b81a09ea977ae1a42d25a1d9e69",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 06-COMMUNICATION-EXAMPLES.md",
@@ -108,8 +119,8 @@
     {
       "path": "00-START-HERE.md",
       "tier": "extended",
-      "bytes": 7465,
-      "sha256": "16163deb01cf54feb123b5250afae2e8e018f6ac73fce422d26644c2e860c322",
+      "bytes": 8322,
+      "sha256": "b77942c955c56c81089bea11589ee088b455bf20b4affa0b4f1b1891fec83190",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 00-START-HERE.md",
@@ -174,8 +185,8 @@
     {
       "path": "08-RELEASE-NOTES.md",
       "tier": "extended",
-      "bytes": 2634,
-      "sha256": "ac90db372047eae4ae1226e0bc0fc526317dea08d6d158a8ef8518bb86245a35",
+      "bytes": 3359,
+      "sha256": "964cd7ddadfc848687ffc9158c6be6f743577493237dd8ade8164f83bc5cf186",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 08-RELEASE-NOTES.md",
@@ -336,5 +347,6 @@
   },
   "updated_on": "2026-10-25",
   "current_profile": "sources/profile/ARTEMIS-PROFILE.md",
-  "current_behavior": "COLLABORATION-BEHAVIOR-v5.1.json"
+  "current_behavior": "COLLABORATION-BEHAVIOR-v5.1.json",
+  "role_enactment": "10-ROLE-ENACTMENT.md"
 }

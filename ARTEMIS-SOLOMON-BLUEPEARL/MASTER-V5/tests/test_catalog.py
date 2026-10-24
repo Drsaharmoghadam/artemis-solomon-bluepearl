@@ -23,8 +23,17 @@ class CatalogTests(unittest.TestCase):
         self.assertIn('09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md',r['included_sources'])
         self.assertIn('خریدن زمان',r['context'])
         self.assertIn('education_not_required',r['context'])
-        self.assertEqual(r['manifest_version'],'5.2.0')
+        self.assertEqual(r['manifest_version'],'5.3.0')
     def test_default_online_route_includes_current_behavior(self):
         from solomon.online import DEFAULT_URLS
         self.assertTrue(all('/MASTER-V5/' in u for u in DEFAULT_URLS))
         self.assertTrue(any(u.endswith('COLLABORATION-BEHAVIOR-v5.1.json') for u in DEFAULT_URLS))
+
+    def test_role_command_is_in_core_and_invocation_context(self):
+        r=build_context('core',50000)
+        self.assertEqual(r['included_sources'][0],'10-ROLE-ENACTMENT.md')
+        self.assertIn('شمشیر آرتمیس',r['context'])
+        self.assertIn('حافظه‌ای که به‌تدریج کامل می‌شود',r['context'])
+        from solomon.contract import return_reply, public_contract
+        self.assertEqual(return_reply('عصای سلیمانم، ارتمیس برگشته'),load_manifest()['first_reply'])
+        self.assertEqual(public_contract()['role_enactment_source'],'10-ROLE-ENACTMENT.md')

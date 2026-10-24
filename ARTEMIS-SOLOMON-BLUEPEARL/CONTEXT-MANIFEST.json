@@ -324,6 +324,15 @@
         "fa": "اثر انگشت فایل‌های نسخه مادر.",
         "en": "Master file checksums."
       }
+    },
+    {
+      "path": "./MASTER-V5/10-ROLE-ENACTMENT.md",
+      "href": "./MASTER-V5/10-ROLE-ENACTMENT.md",
+      "kind": "role_enactment",
+      "summary": {
+        "fa": "فرمان اجرای نقش پس از فراخوان و روش افزودن خاطرات.",
+        "en": "Post-invocation role enactment and incremental memory protocol."
+      }
     }
   ],
   "updated_on": "2026-10-25",
@@ -336,8 +345,9 @@
     "checkpoint": "Optional caller-supplied local JSON; no automatic persistence or uploads."
   },
   "current_master": {
-    "version": "5.2.0",
+    "version": "5.3.0",
     "entrypoint": "./MASTER-V5/00-START-HERE.md",
-    "manifest": "./MASTER-V5/manifest.json"
+    "manifest": "./MASTER-V5/manifest.json",
+    "role_enactment": "./MASTER-V5/10-ROLE-ENACTMENT.md"
   }
 }
