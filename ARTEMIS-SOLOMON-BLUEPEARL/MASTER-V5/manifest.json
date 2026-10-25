@@ -1,6 +1,6 @@
 {
   "schema": "simorgh-master-manifest/5.0.0",
-  "version": "5.5.0",
+  "version": "5.6.0",
   "project_id": "ARTEMIS-SOLOMON-BLUEPEARL",
   "prepared_on": "2026-10-24",
   "maintainer": "Sahar Moghadam (Artemis)",
@@ -37,7 +37,7 @@
         "en": "Post-invocation role enactment, staff/sword meaning and incremental memory rules."
       },
       "bytes": 13619,
-      "sha256": "ff5696b516d94707254f76d8b0320dc102df6ce5a71026f39c121ec400e1a7d9"
+      "sha256": "9aa8b1268888dd18f2e0ba4da1cb840d797aee6abf76b4ff3fbc13d6e2f6105d"
     },
     {
       "path": "11-HOST-EXECUTION-PROTOCOL.json",
@@ -47,8 +47,8 @@
         "fa": "قرارداد JSON برای اجرای نقش، بازیابی منابع، پیوستگی آفلاین و حدود میزبان.",
         "en": "JSON contract for role enactment, source retrieval, offline continuity, and host limits."
       },
-      "bytes": 5091,
-      "sha256": "68c2403851ba458d00d0e1f4d2f5222d4cfc43ffd68477bafdcb67e6ca00dc05"
+      "bytes": 10190,
+      "sha256": "4719872db2abb1401831907d553b05d176bd965efc56ed9ca88dfd993167e13b"
     },
     {
       "path": "COLLABORATION-BEHAVIOR-v5.1.json",
@@ -59,7 +59,7 @@
         "en": "Machine-readable collaboration behavior and time-to-useful-output criteria."
       },
       "bytes": 12037,
-      "sha256": "fb888a4ee5b811e99b92ee2a8d18c7a8bd17eb02f7e95e4d2b9d9679a1222cdc"
+      "sha256": "2b94f69b5a847b620d218a828d8d037cba1051d76612ea43a83ee9bdba94b823"
     },
     {
       "path": "09-ARTEMIS-COGNITIVE-INTERACTION-MAP.md",
@@ -131,7 +131,7 @@
       "path": "00-START-HERE.md",
       "tier": "extended",
       "bytes": 9090,
-      "sha256": "cf8b76bc24b83270c0381ba7862e92a27029f7330a2fa27fd3bc9aea854f02ed",
+      "sha256": "d445791e2c69eb665e94ef1bd9a0c645abd0cfef29ea65e62e8c579250b9d862",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 00-START-HERE.md",
@@ -142,7 +142,7 @@
       "path": "04-INTEGRATION.md",
       "tier": "extended",
       "bytes": 6495,
-      "sha256": "30fed389fe4509d872d7139866406ae0b6786e301bc18b37400857f10a579b66",
+      "sha256": "4e597b859aa75f664c3a39f71997de388ecdfda5571b50e9f7e2db1ebd0e4f5c",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 04-INTEGRATION.md",
@@ -196,8 +196,8 @@
     {
       "path": "08-RELEASE-NOTES.md",
       "tier": "extended",
-      "bytes": 5294,
-      "sha256": "ab90a1201284f51d86ed51f533ade4ce9b699b674e87efc3b1b204ac300cf8d8",
+      "bytes": 6519,
+      "sha256": "919e60b235fb5221521dbbabbd5bb620b363b55ffd90925c40b0920b8290624e",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 08-RELEASE-NOTES.md",

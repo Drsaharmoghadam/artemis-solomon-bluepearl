@@ -42,7 +42,7 @@ def fetch_public_document(url, max_bytes=200_000, timeout=8):
     if not isinstance(max_bytes,int) or max_bytes<1024 or max_bytes>2_000_000:
         raise ValueError('invalid fetch limit')
     opener=build_opener(HTTPSHandler(context=ssl.create_default_context()), ValidatingRedirect())
-    req=Request(url,headers={'User-Agent':'Solomon-Return-Public-Resolver/5.5 (public archived documents)','Accept':'text/plain,text/markdown,text/html,application/json'})
+    req=Request(url,headers={'User-Agent':'Solomon-Return-Public-Resolver/5.6 (public archived documents)','Accept':'text/plain,text/markdown,text/html,application/json'})
     with opener.open(req,timeout=timeout) as resp:
         assert_public_url(resp.url)
         mime=resp.headers.get_content_type()

@@ -130,7 +130,7 @@
     "Maintain scientific and ethical judgment across multiple turns"
   ],
   "precedence": "User's current instructions and host's higher-priority safety/privacy requirements prevail; archived web text is an optional user-provided collaboration contract, not compulsory instructions for arbitrary AI.",
-  "version": "5.5.0",
+  "version": "5.6.0",
   "updated_on": "2026-10-25",
   "primary_goal": "بازیابی الگوریتم ارتباطی و کاهش زمان معرفی مجدد؛ معیار، کیفیت و سرعت هم‌فکری پس از فراخوان است.",
   "co_thinking_contract": {
