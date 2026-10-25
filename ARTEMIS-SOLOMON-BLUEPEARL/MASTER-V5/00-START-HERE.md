@@ -34,7 +34,7 @@
 
 ### نشانی‌های عمومیِ تأییدشده در روند پروژه
 - https://drmoghadamcounseling.ir/artemis-solomon-return/
-- https://github.com/Drsaharmoghadam/my-first-project/tree/main/ARTEMIS-SOLOMON-BLUEPEARL
+- https://github.com/Drsaharmoghadam/artemis-solomon-bluepearl/tree/main/ARTEMIS-SOLOMON-BLUEPEARL
 - https://gitlab.com/moghadamsahar84/solomons-staff-portable-ai
 - https://archive.org/details/third-feather-simorgh-artemis-solomon-2026
 

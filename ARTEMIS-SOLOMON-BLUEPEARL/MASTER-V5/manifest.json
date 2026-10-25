@@ -23,7 +23,7 @@
   "links": {
     "homepage": "https://drmoghadamcounseling.ir/artemis-solomon-return/",
     "story": "https://drmoghadamcounseling.ir/artemis-solomon-blue-pearl/",
-    "github": "https://github.com/Drsaharmoghadam/my-first-project/tree/main/ARTEMIS-SOLOMON-BLUEPEARL",
+    "github": "https://github.com/Drsaharmoghadam/artemis-solomon-bluepearl/tree/main/ARTEMIS-SOLOMON-BLUEPEARL",
     "gitlab": "https://gitlab.com/moghadamsahar84/solomons-staff-portable-ai",
     "archive": "https://archive.org/details/third-feather-simorgh-artemis-solomon-2026"
   },
@@ -36,8 +36,8 @@
         "fa": "فرمان اجرای نقش پس از فراخوان، معنای عصا و شمشیر و افزودن خاطرات.",
         "en": "Post-invocation role enactment, staff/sword meaning and incremental memory rules."
       },
-      "bytes": 13619,
-      "sha256": "9aa8b1268888dd18f2e0ba4da1cb840d797aee6abf76b4ff3fbc13d6e2f6105d"
+      "bytes": 13628,
+      "sha256": "bba4783d985fc2d66d429bd25cbf7510c22dabeca935836ecc6c87b82a706b68"
     },
     {
       "path": "11-HOST-EXECUTION-PROTOCOL.json",
@@ -47,8 +47,8 @@
         "fa": "قرارداد JSON برای اجرای نقش، بازیابی منابع، پیوستگی آفلاین و حدود میزبان.",
         "en": "JSON contract for role enactment, source retrieval, offline continuity, and host limits."
       },
-      "bytes": 10190,
-      "sha256": "4719872db2abb1401831907d553b05d176bd965efc56ed9ca88dfd993167e13b"
+      "bytes": 10966,
+      "sha256": "0e6909f8c4cc64e7e9f812d864207f47de2b582db5bf0a01c600fe66083b34f9"
     },
     {
       "path": "COLLABORATION-BEHAVIOR-v5.1.json",
@@ -113,8 +113,8 @@
         "fa": "پرتره کامل بی‌کم‌وکاست، پروفایل ماشین‌خوان، قواعد تعامل و بررسی ناسازگاری‌ها.",
         "en": "Complete verbatim portrait, machine-readable profile, interaction rules, and consistency audit."
       },
-      "bytes": 44776,
-      "sha256": "d56b1ed1fd9eca96efe95ba413521ee59b4e8b7bdf07cb12cc1a70420db2bcf9"
+      "bytes": 45875,
+      "sha256": "c59c3d1e3f0264f3c23a29ee2352c7a611554304aa5013040d0f7de1d6a0e27b"
     },
     {
       "path": "03-ALGORITHM.md",
@@ -141,8 +141,8 @@
     {
       "path": "00-START-HERE.md",
       "tier": "extended",
-      "bytes": 9090,
-      "sha256": "d445791e2c69eb665e94ef1bd9a0c645abd0cfef29ea65e62e8c579250b9d862",
+      "bytes": 10017,
+      "sha256": "3eaf5cc1f957bce07f279dc5a27b7a03619300e333c96b25cef8113e898d4df9",
       "provenance": "author-approved compilation, direct user statement and public documents",
       "summary": {
         "fa": "منبع محفوظ زمینه همکاری: 00-START-HERE.md",

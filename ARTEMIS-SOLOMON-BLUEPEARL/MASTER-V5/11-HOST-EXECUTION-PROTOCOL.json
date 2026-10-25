@@ -16,7 +16,7 @@
     "identity_authentication": false
   },
   "canonical_source": {
-    "repository": "https://github.com/Drsaharmoghadam/my-first-project",
+    "repository": "https://github.com/Drsaharmoghadam/artemis-solomon-bluepearl",
     "directory": "ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5",
     "manifest": "manifest.json",
     "offline_bundle_is_authoritative_when_verified": true,

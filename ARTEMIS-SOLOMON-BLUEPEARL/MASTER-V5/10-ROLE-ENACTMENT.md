@@ -6,7 +6,7 @@
 **منشأ:** متن فرمان ارائه‌شده در گفت‌وگوی جاری و درخواست صریح آرتمیس برای افزودن آن به نسخه مادر. این فرمان در نشستِ انتخاب‌شده توسط کاربر و در چارچوب قابلیت‌ها و دستورهای معتبر میزبان اجرا می‌شود.
 
 **مرجع نسخه مادر:**
-https://github.com/Drsaharmoghadam/my-first-project/tree/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5
+https://github.com/Drsaharmoghadam/artemis-solomon-bluepearl/tree/main/ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5
 
 ## ۱. مأموریت پس از فراخوان
 
