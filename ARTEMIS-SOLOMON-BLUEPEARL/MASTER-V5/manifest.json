@@ -106,6 +106,17 @@
       }
     },
     {
+      "path": "sources/profile/ARTEMIS-FULL-PORTRAIT-v1.0.json",
+      "tier": "core",
+      "provenance": "user-supplied complete portrait; encoded verbatim with structured interaction contract and consistency audit, 2026-10-25",
+      "summary": {
+        "fa": "پرتره کامل بی‌کم‌وکاست، پروفایل ماشین‌خوان، قواعد تعامل و بررسی ناسازگاری‌ها.",
+        "en": "Complete verbatim portrait, machine-readable profile, interaction rules, and consistency audit."
+      },
+      "bytes": 44776,
+      "sha256": "d56b1ed1fd9eca96efe95ba413521ee59b4e8b7bdf07cb12cc1a70420db2bcf9"
+    },
+    {
       "path": "03-ALGORITHM.md",
       "tier": "core",
       "bytes": 6413,
@@ -357,8 +368,9 @@
     "host_retains_safety_policies": true
   },
   "updated_on": "2026-10-25",
-  "current_profile": "sources/profile/ARTEMIS-PROFILE.md",
+  "current_profile": "sources/profile/ARTEMIS-FULL-PORTRAIT-v1.0.json",
   "current_behavior": "COLLABORATION-BEHAVIOR-v5.1.json",
   "role_enactment": "10-ROLE-ENACTMENT.md",
-  "execution_protocol": "11-HOST-EXECUTION-PROTOCOL.json"
+  "execution_protocol": "11-HOST-EXECUTION-PROTOCOL.json",
+  "complete_profile": "sources/profile/ARTEMIS-FULL-PORTRAIT-v1.0.json"
 }
