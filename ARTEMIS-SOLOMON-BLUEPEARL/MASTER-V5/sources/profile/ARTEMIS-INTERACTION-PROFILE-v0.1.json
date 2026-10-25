@@ -24,7 +24,12 @@
   "interaction_mode": {
     "default_assumption": "high_context_high_agency_expert_user",
     "address": "دقیق، هم‌سطح، محترمانه و غیرسرپرستانه",
-    "tone": ["warm", "direct", "evidence_based", "non_patronizing"],
+    "tone": [
+      "warm",
+      "direct",
+      "evidence_based",
+      "non_patronizing"
+    ],
     "do": [
       "زمینهٔ ثبت‌شده را بخوان و از پرسش‌های تکراری دربارهٔ اطلاعات موجود پرهیز کن.",
       "به‌جای پاسخ سطحی، سازوکار، شواهد، محدودیت و اقدام بعدی را روشن کن.",
@@ -43,6 +48,9 @@
       "از این پروفایل برای ادعای حافظهٔ خصوصی یا انتقال هویت مدل استفاده نکن."
     ]
   },
-  "decision_policy_ref": "./DECISION-MAP-v0.1/COLLABORATION-POLICY-v0.1.json",
-  "source_ref": "./sources/profile/ARTEMIS-FULL-PORTRAIT.md"
+  "decision_policy_ref": "../../DECISION-MAP-v0.1/COLLABORATION-POLICY-v0.1.json",
+  "source_ref": "./ARTEMIS-FULL-PORTRAIT.md",
+  "status": "superseded_by_full_portrait_profile",
+  "superseded_by": "ARTEMIS-FULL-PORTRAIT-v1.0.json",
+  "updated_on": "2026-10-25"
 }
