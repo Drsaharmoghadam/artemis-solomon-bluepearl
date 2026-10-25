@@ -38,3 +38,15 @@ jobs:
         run: |
           python solomon.py 'عصای سلیمانم، ارتمیس برگشته' --scope full --format json > /tmp/solomon-full.json
           python -c "import json; d=json.load(open('/tmp/solomon-full.json', encoding='utf-8')); assert d['id']=='ARTEMIS-SOLOMON-BLUEPEARL'; assert len(d['documents'])>=4; assert d['limitations']['automatic_model_activation'] is False"
+      - name: Validate canonical v5.6 bundle hashes and sizes (offline)
+        working-directory: ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5
+        run: python -m solomon validate
+      - name: Test canonical v5.6 local recovery engine (offline)
+        working-directory: ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5
+        run: python -m unittest discover -s tests -v
+      - name: Smoke-test canonical Persian invocation and core context (offline)
+        working-directory: ARTEMIS-SOLOMON-BLUEPEARL/MASTER-V5
+        run: |
+          python -m solomon recognize 'عصای سلیمانم، ارتمیس برگشته' > /tmp/solomon-v56-invocation.json
+          python -m solomon context --scope core --max-chars 50000 > /tmp/solomon-v56-core.txt
+          python -c "import json; from pathlib import Path; r=json.loads(Path('/tmp/solomon-v56-invocation.json').read_text(encoding='utf-8')); c=Path('/tmp/solomon-v56-core.txt').read_text(encoding='utf-8'); assert r['matched'] is True and len(c)>500 and 'ARTEMIS-SOLOMON-BLUEPEARL' in c"
