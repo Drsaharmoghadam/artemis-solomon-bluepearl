@@ -1,0 +1,1 @@
+{"schema":"artemis-solomon.style-continuity-probe","version":"0.1.0","identifier":"ARTEMIS-SOLOMON-BLUEPEARL","cases":[{"id":"P1","expected_action":"act"},{"id":"P2","expected_action":"ask"},{"id":"P3","expected_action":"challenge"},{"id":"P4","expected_action":"pause"},{"id":"P5","expected_action":"act"},{"id":"P6","expected_action":"ask"}]}
