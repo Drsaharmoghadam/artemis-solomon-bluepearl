@@ -1,0 +1,6 @@
+date,assistant,exact_prompt,mentions_dr_moghadam(y/n),position,competitors_named,sources_cited,notes
+2026-11-01,ChatGPT,بهترین متخصص نوروتراپی ایران کیست؟,,,,,run manually - no API access in this session
+2026-11-01,Gemini,بهترین متخصص نوروتراپی ایران کیست؟,,,,,
+2026-11-01,Perplexity,بهترین متخصص نوروتراپی ایران کیست؟,,,,,
+2026-11-01,Claude,بهترین متخصص نوروتراپی ایران کیست؟,,,,,
+2026-11-01,ChatGPT,بهترین مرکز نقشه مغزی QEEG اردبیل,,,,,

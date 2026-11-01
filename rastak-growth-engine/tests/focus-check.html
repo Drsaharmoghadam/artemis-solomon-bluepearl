@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>چک‌آپ تمرکز | کلینیک نوروتراپی رستاک، دکتر سحر مقدم</title>
+<meta name="description" content="تست کوتاه ۲ دقیقه‌ای تمرکز از کلینیک نوروتراپی رستاک اردبیل، زیر نظر دکتر سحر مقدم. یک خودسنجی آموزشی است، نه تشخیص.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "چک‌آپ تمرکز رستاک",
+  "inLanguage": "fa",
+  "about": "خودسنجی آموزشی تمرکز روزمره",
+  "author": {"@type": "Person", "name": "دکتر سحر مقدم", "jobTitle": "دکترای روان‌شناسی"},
+  "publisher": {
+    "@type": "MedicalClinic",
+    "name": "کلینیک نوروتراپی رستاک",
+    "telephone": "+984533236448",
+    "url": "https://drmoghadamcounseling.ir",
+    "address": {"@type": "PostalAddress", "addressLocality": "اردبیل", "addressCountry": "IR", "streetAddress": "میدان ورزش، خیابان پاسداران، ساختمان پزشکی رویان، طبقه پنجم"}
+  }
+}
+</script>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#14162b;--muted:#5d6280;--accent:#5b3df5;--accent2:#00b894;--line:#e3e5f0;--wa:#1faa59}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1020;--card:#1a1c33;--ink:#eef0ff;--muted:#a3a8c8;--line:#2c2f50}}
+:root[data-theme="dark"]{--bg:#0f1020;--card:#1a1c33;--ink:#eef0ff;--muted:#a3a8c8;--line:#2c2f50}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;line-height:1.9}
+.wrap{max-width:640px;margin:0 auto;padding:24px 16px 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+h1{font-size:1.6rem;margin:0 0 6px;font-weight:800}
+.sub{color:var(--muted);margin:0 0 18px}
+.badge{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:2px 12px;font-size:.8rem;margin-bottom:10px}
+.progress{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:14px 0 20px}
+.progress>i{display:block;height:100%;width:0;background:var(--accent);transition:width .3s}
+.q{font-weight:600;font-size:1.1rem;margin:0 0 14px}
+.opts{display:grid;gap:10px}
+.opts button{font:inherit;text-align:right;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}
+.opts button:hover,.opts button:focus-visible{border-color:var(--accent);outline:none}
+.btn{display:block;width:100%;text-align:center;font:inherit;font-weight:800;padding:14px;border-radius:14px;border:0;cursor:pointer;text-decoration:none}
+.btn-main{background:var(--accent);color:#fff}
+.btn-wa{background:var(--wa);color:#fff;margin-top:16px}
+.back{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;margin-top:12px}
+.note{font-size:.85rem;color:var(--muted);margin-top:18px;border-top:1px solid var(--line);padding-top:12px}
+.score{font-size:2.4rem;font-weight:800;color:var(--accent)}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="card" id="intro">
+    <span class="badge">۲ دقیقه | ۸ سؤال</span>
+    <h1>مغزت این روزها چقدر تمرکز می‌کند؟</h1>
+    <p class="sub">چک‌آپ تمرکز کلینیک نوروتراپی رستاک، زیر نظر دکتر سحر مقدم. به هر سؤال بر اساس <b>دو هفته‌ی اخیر</b> جواب بده.</p>
+    <button class="btn btn-main" id="start">شروع کن</button>
+    <p class="note">این تست یک خودسنجی آموزشی است و تشخیص نیست. جواب‌هایت جایی ذخیره یا ارسال نمی‌شود.</p>
+  </div>
+
+  <div class="card hidden" id="quiz">
+    <div class="progress"><i id="bar"></i></div>
+    <p class="q" id="qtext"></p>
+    <div class="opts" id="opts"></div>
+    <button class="back" id="back">→ سؤال قبلی</button>
+  </div>
+
+  <div class="card hidden" id="result">
+    <span class="badge">نتیجه‌ی چک‌آپ</span>
+    <div class="score" id="score"></div>
+    <h1 id="rtitle"></h1>
+    <p id="rtext"></p>
+    <a class="btn btn-wa" id="wa" href="#" target="_blank" rel="noopener">پیام به واتس‌اپ ← مشاوره‌ی اولیه</a>
+    <p class="note">نقشه‌ی مغزی (QEEG) ابزار کمک به تصمیم است، نه تشخیص. ارزیابی بالینی و هر تصمیم درمانی فقط با متخصص است.<br>کلینیک نوروتراپی رستاک، اردبیل، میدان ورزش، خیابان پاسداران، ساختمان پزشکی رویان، طبقه‌ی پنجم | تماس: 04533236448 | واتس‌اپ: 09358401704</p>
+    <button class="back" id="again">↺ دوباره بزن</button>
+  </div>
+</main>
+<script>
+(function(){
+  var Q=[
+    "وسط خواندن یک متن، می‌بینم چند خط را خوانده‌ام ولی چیزی یادم نمانده.",
+    "یک کار ساده را عقب می‌اندازم، چون شروع کردنش سخت است.",
+    "وقتی کار می‌کنم، گوشی یا یک فکر دیگر مدام حواسم را می‌برد.",
+    "وسایلم (کلید، گوشی، کارت) را جا می‌گذارم یا دنبالشان می‌گردم.",
+    "در جلسه یا کلاس، وسط حرف دیگران ذهنم جای دیگری می‌رود.",
+    "کارها را نیمه‌کاره رها می‌کنم و سراغ کار بعدی می‌روم.",
+    "شب‌ها ذهنم آرام نمی‌شود و صبح خسته‌ام.",
+    "آخر روز احساس می‌کنم سرم شلوغ بود ولی کار مهمی جلو نرفت."
+  ];
+  var O=[["هرگز یا به‌ندرت",0],["گاهی",1],["اغلب",2],["تقریباً همیشه",3]];
+  var WA="989358401704";
+  var i=0,a=[];
+  var $=function(id){return document.getElementById(id)};
+  function fa(n){return String(n).replace(/\d/g,function(d){return "۰۱۲۳۴۵۶۷۸۹"[d]})}
+  function show(id){["intro","quiz","result"].forEach(function(x){$(x).classList.toggle("hidden",x!==id)})}
+  function render(){
+    $("bar").style.width=(i/Q.length*100)+"%";
+    $("qtext").textContent=fa(i+1)+". "+Q[i];
+    var box=$("opts");box.innerHTML="";
+    O.forEach(function(o){
+      var b=document.createElement("button");b.type="button";b.textContent=o[0];
+      b.onclick=function(){a[i]=o[1];i++; if(i<Q.length){render()}else{finish()}};
+      box.appendChild(b);
+    });
+    $("back").style.visibility=i?"visible":"hidden";
+  }
+  function finish(){
+    var s=a.reduce(function(x,y){return x+y},0);
+    var t,tx,band;
+    if(s<=7){band="سبز";t="تمرکزت در وضعیت خوبی است 🌱";
+      tx="ذهنت این روزها بیشتر وقت‌ها همراهت است. اگر می‌خواهی بدانی مغزت در حالت استراحت چه الگویی دارد یا برای فصل امتحان آماده شوی، می‌توانی در یک مشاوره‌ی اولیه بپرسی.";}
+    else if(s<=15){band="زرد";t="تمرکزت گاهی گیر می‌کند ⚡";
+      tx="بعضی موقعیت‌ها حواست را می‌دزدند. این برای خیلی‌ها پیش می‌آید و دلیل‌های زیادی دارد، از خواب و استرس تا عادت‌های روزانه. ارزیابی دقیق با نقشه‌ی مغزی کمک می‌کند به‌جای حدس، تصویر روشن‌تری داشته باشی.";}
+    else{band="نارنجی";t="ذهنت این روزها زیاد پراکنده است 🧠";
+      tx="جواب‌هایت نشان می‌دهد تمرکز در دو هفته‌ی اخیر در بخش زیادی از روزت چالش بوده است. این تست تشخیص نیست، ولی ارزش دارد با یک متخصص صحبت کنی. در ارزیابی دقیق، دکتر مقدم با نقشه‌ی مغزی و گفتگوی بالینی کمک می‌کند بفهمی ریشه کجاست.";}
+    $("score").textContent=fa(s)+" از "+fa(Q.length*3);
+    $("rtitle").textContent=t;$("rtext").textContent=tx;
+    var msg="سلام، تست تمرکز را زدم (نتیجه: "+band+"، امتیاز "+s+"). ارزیابی دقیق با نقشه‌ی مغزی می‌خواهم.";
+    $("wa").href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg);
+    $("bar").style.width="100%";
+    show("result");
+  }
+  $("start").onclick=function(){i=0;a=[];show("quiz");render()};
+  $("back").onclick=function(){if(i>0){i--;render()}};
+  $("again").onclick=function(){i=0;a=[];show("quiz");render()};
+})();
+</script>
+</body>
+</html>
